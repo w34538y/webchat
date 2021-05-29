@@ -1,3 +1,10 @@
+.banner {
+    text-align: center;
+}
+.banner img {
+    width: 200px;
+    height: 100px;
+}
 section {
     background-color: #FFE012;
     text-align: center;
@@ -8,18 +15,17 @@ section {
 }
 .menu div {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80px;
     width: 200px;
     margin-bottom: 10px;
     border-radius: 20px;
     font-size: 30px;
-    color: white;
     background-color: #8a3411;
 }
-.banner {
-    text-align: center;
+.menu div a {
+    text-decoration: none;
+    padding: 20px 0;
+    color: white;
+    width: 200px;
 }
 footer {
     background-color: lightgray;
