@@ -12,15 +12,11 @@
             </div>
         </header>
         <section>
-            <form action="/login" method='post' class="login_form">
-                <div>
-                    <div>ID</div><input class="id" name="id" type="text">
-                </div>
-                <div>
-                    <div>PASSWORD</div><input class="passwd" name="passwd" type="password">
-                </div>
-                <button type="submit">로그인하기</button>
-            </form>
+            <div><%= nick%>님 환영합니다</div>
+            <button>로그아웃</button>
+            <span>채팅방 이름 :</span>
+            <input type="text" name="roomname">
+            <button>입장하기</button>
         </section>
         <footer>
             <div>&copy; 모든 자료는 본인에게 저작권이 있습니다.</div>

@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>웹톡에 오신 것을 환영합니다.</title>
-        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="/css/main.css">
     </head>
     <body>
         <header>
@@ -13,8 +13,8 @@
         </header>
         <section>
             <div class="menu">
-                <div class="join"><a href="join.html">회원 가입</a></div>
-                <div class="login"><a href="login.html">로그인</a></div>
+                <div class="join" onclick="joinpage()">회원 가입</div>
+                <div class="login" onclick ="loginpage()">로그인</div>
                 <div class="chat"><a href="chat.html">채팅 시작하기</a></div>
             </div>
         </section>
@@ -22,5 +22,13 @@
             <div>&copy; 모든 자료는 본인에게 저작권이 있습니다.</div>
             <div>Admin Contact : @gmail.com</div>
         </footer>
+        <script type="text/javascript">
+        function joinpage(){
+            location.href="/join";
+        }
+        function loginpage(){
+            location.href="/login";
+        }
+        </script>
     </body>
 </html>

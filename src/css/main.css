@@ -14,14 +14,12 @@ section {
     margin: 200px auto;
 }
 .menu div {
-    display: flex;
     width: 200px;
     margin-bottom: 10px;
     border-radius: 20px;
     font-size: 30px;
     background-color: #8a3411;
-}
-.menu div a {
+    text-align: center;
     text-decoration: none;
     padding: 20px 0;
     color: white;

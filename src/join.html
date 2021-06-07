@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>웹톡 로그인</title>
-        <link rel="stylesheet" href="/css/login.css">
+        <link rel="stylesheet" href="/css/join.css">
     </head>
     <body>
         <header>
@@ -12,14 +12,17 @@
             </div>
         </header>
         <section>
-            <form action="/login" method='post' class="login_form">
+            <form action="/join" method='post' class="join_form">
                 <div>
                     <div>ID</div><input class="id" name="id" type="text">
                 </div>
                 <div>
                     <div>PASSWORD</div><input class="passwd" name="passwd" type="password">
                 </div>
-                <button type="submit">로그인하기</button>
+                <div>
+                    <div>nickname</div><input class="nickname"  name="nickname" type="text">
+                </div>
+                <button type="submit">회원가입하기</button>
             </form>
         </section>
         <footer>
