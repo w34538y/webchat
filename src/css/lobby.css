@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 .banner {
     text-align: center;
 }
@@ -9,37 +13,37 @@ section {
     background-color: #FFE012;
     text-align: center;
 }
-
+.welcome {
+    padding-top: 20px;
+}
 footer {
     background-color: lightgray;
     height: 120px;
     margin-top: 10px;
 }
-.login_form {
+.status input {
     display: inline-block;
-    margin: 100px auto;
-}
-.login_form input {
     border: none;
     width: 150px;
     height: 30px;
     border-radius: 5px;
 }
-.login_form button {
+.logout, .withdraw {
+    display: inline-block;
     width: 150px;
     margin-top: 20px;
-    text-align: center;
     border-radius: 5px;
     background-color: #8a3411;
     color: white;
     padding: 20px 0;
     cursor: pointer;
+    margin-bottom: 40px;
 }
-.login_form .id{
-    margin-bottom: 20px;
+.logout a, .withdraw a{
+    color: white;
+    padding: 15px 35px;
+    text-decoration: none;
 }
-.name-section {
-    font-size: 30px;
-    font-weight: bold;
-    padding: 20px 0;
+.nickname {
+    margin-bottom: 50px;
 }

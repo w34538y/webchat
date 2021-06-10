@@ -2,8 +2,9 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>웹톡 로그인</title>
-        <link rel="stylesheet" href="/css/login.css">
+        <title>웹톡 로비</title>
+        <link rel="stylesheet" href="/css/lobby.css">
+        <link rel="stylesheet" href="/css/chat.css">
     </head>
     <body>
         <header>
@@ -12,15 +13,48 @@
             </div>
         </header>
         <section>
-            <div><%= nick%>님 환영합니다</div>
-            <button>로그아웃</button>
-            <span>채팅방 이름 :</span>
-            <input type="text" name="roomname">
-            <button>입장하기</button>
+            <div class="welcome"><%= nick%>님 환영합니다</div>
+            <div class="logout">
+                <a href="/logout">로그아웃</a>
+            </div>
+            <div class="withdraw">
+                <a href="/withdraw">회원탈퇴</a>
+            </div>
+            <div>
+                <form action="enter" method="POST" class="status">
+                    <div>채팅방 이름</div>
+                    <div>
+                        <input type="text" class="roomname" name="roomname"> 
+                    </div>
+                    <div>본인 닉네임 </div>
+                    <div>
+                        <input type="text" class="nickname" name="nickname" value="<%= nick %>" readonly> 
+                    </div>
+                </form>
+                <input type="checkbox" value="afk" class="afk">자리비움
+            </div>
         </section>
+        <div class="wrapper">
+            <div class="user-container">
+                <h2 id="Headerchat">채팅방 이름을 입력하고 채팅 시작을 쳐주세요!</h2>
+            </div>
+            <div class="display-container">
+                <ul class="chatting-list">
+                </ul>
+            </div>
+            <div class="input-container">
+                <span>
+                    <input type="text" class="chatting-input">
+                    <button class="send-button">전송</button>
+                </span>
+            </div>
+        </div>
         <footer>
             <div>&copy; 모든 자료는 본인에게 저작권이 있습니다.</div>
             <div>Admin Contact : @gmail.com</div>
         </footer>
+
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="/js/chat.js"></script>
     </body>
 </html>

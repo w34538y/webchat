@@ -15,17 +15,17 @@ footer {
     height: 120px;
     margin-top: 10px;
 }
-.login_form {
+.search_form {
     display: inline-block;
     margin: 100px auto;
 }
-.login_form input {
+.search_form input {
     border: none;
     width: 150px;
     height: 30px;
     border-radius: 5px;
 }
-.login_form button {
+.search_form button {
     width: 150px;
     margin-top: 20px;
     text-align: center;
@@ -35,7 +35,7 @@ footer {
     padding: 20px 0;
     cursor: pointer;
 }
-.login_form .id{
+.search_form .search{
     margin-bottom: 20px;
 }
 .name-section {

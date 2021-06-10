@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>웹톡 로그인</title>
-        <link rel="stylesheet" href="/css/login.css">
+        <link rel="stylesheet" href="/css/search.css">
     </head>
     <body>
         <header>
@@ -12,15 +12,12 @@
             </div>
         </header>
         <section>
-            <div class="name-section">로그인</div>
-            <form action="/login" method='post' class="login_form">
+            <div class="name-section">검색</div>
+            <form action="/result" method='post' class="search_form">
                 <div>
-                    <div>ID</div><input class="id" name="id" type="text">
+                    <div>검색할 방이름</div><input class="search" name="search" type="text">
                 </div>
-                <div>
-                    <div>PASSWORD</div><input class="passwd" name="passwd" type="password">
-                </div>
-                <button type="submit">로그인하기</button>
+                <button type="submit">검색하기</button>
             </form>
         </section>
         <footer>

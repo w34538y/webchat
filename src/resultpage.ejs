@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>채팅방 검색결과</title>
+        <link rel="stylesheet" href="/css/resultpage.css">
+    </head>
+    <body>
+        <header>
+            <div  class="banner">
+                <img src="../image/banner.png">
+            </div>
+        </header>
+        <section>
+            <div class="name-section">채팅 검색 내용</div>
+        <% if (list.length <= 0) { %>
+            <h4>등록된 데이터가 없습니다</h4>
+        <% } else { %>
+            <table>
+                <th>닉네임</th>
+                <th>내용</th>
+                <th>시간</th>
+                <% list.forEach(function(item){ %>
+                    <tr>
+                        <td><%= item.nick %></td>
+                        <td><%= item.msg %></td>
+                        <td><%= item.time %></td>
+                    </tr>
+                <% }); %>
+            </table>
+        <% } %>
+        <div class="home" onclick ="homepage()">홈으로 돌아가기</div>
+        </section>
+        <footer>
+            <div>&copy; 모든 자료는 본인에게 저작권이 있습니다.</div>
+            <div>Admin Contact : @gmail.com</div>
+        </footer>
+        <script>
+            function homepage(){
+                location.href="/";
+            }
+        </script>
+    </body>
+</html>
