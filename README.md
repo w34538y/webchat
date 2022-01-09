@@ -1,5 +1,7 @@
-추가 기능 목록
+구동 화면 
+![image](https://user-images.githubusercontent.com/8749114/148673582-bd7558b9-a347-4116-901b-21e9ab8e3d25.png)
 
+추가 기능 목록
 
 -	1:1 및 다중 채팅을 하이브리드로 구현
 -	자리비움 기능 구현 
