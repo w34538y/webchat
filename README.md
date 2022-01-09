@@ -1,6 +1,13 @@
 구동 화면 
 ![image](https://user-images.githubusercontent.com/8749114/148673582-bd7558b9-a347-4116-901b-21e9ab8e3d25.png)
 
+채팅 로그 검색 화면 
+![image](https://user-images.githubusercontent.com/8749114/148673618-92a66e59-381e-4498-9069-d9dc832c9327.png)
+
+채팅 화면 
+![image](https://user-images.githubusercontent.com/8749114/148673607-24cad8a9-3555-445f-ab3e-86842be99454.png)
+
+
 추가 기능 목록
 
 -	1:1 및 다중 채팅을 하이브리드로 구현
